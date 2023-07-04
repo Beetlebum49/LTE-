@@ -13,8 +13,9 @@ s3: 将各路正交载波调制后信号叠加，获得OFDM信号（通过叠加
 采用循环前缀（CP， Cyclic Prefix），信号的后面一部分移到前面（本来是空白的地方），循环前缀的具体原理可以参考文章https://zhuanlan.zhihu.com/p/334754707，本质上是**将线性卷积转换为圆卷积**。
 
 # SC-FDMA
-SC-FDMA用于LTE系统上行数据传输，具体内容可参考文献INTRODUCTION TO SINGLE CARRIER FDMA 
+SC-FDMA用于LTE系统上行数据传输，具体内容可参考文献INTRODUCTION TO SINGLE CARRIER FDMA 和https://support.ixiacom.com/sites/default/files/resources/whitepaper/sc-fdma-indd.pdf
 ## SC-FDMA实现方式
+SC-FDMA与OFDM的主要不同载与DFT mapper，$`N$个symbol组成一个block，进行$`N$点DFT，从而时域信号转为频域，后续类似OFDM的处理，子载波数量记为$`M$且$`M\g N$
 
 
 
