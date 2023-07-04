@@ -19,6 +19,8 @@ Uplink Wireless Transmission 和https://support.ixiacom.com/sites/default/files/
 SC-FDMA与OFDM的主要不同在于DFT mapper, $N$ 个symbol
 组成一个block，然后进行$N$点DFT，从而时域信号转为频域，后续进行类似OFDM的处理，子载波数量记为$`M`$ 且$M > N$\
 对于OFDM信号，每个symbol对应一个子载波，而SC-FDMA由于DFT的预处理，将一个symbol在频域上拆分，拆分后的信号载映射到其对应的子载波上，映射方式分为locally mapping（集中映射到一段频带）和distributed mapping（分散映射到整个频带上）
+## 峰均功率比（PAPR）
+SC_FDMA更低，对于发射机要求更低
 
 
 
